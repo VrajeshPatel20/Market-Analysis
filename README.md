@@ -10,7 +10,7 @@
 
 # BACKEND
 
-1. We get real time data by DATA MINING using the praw library (specific to redit) and create a data frame of multiple relevant pages from reddit
+1. We get real time data by DATA MINING using the praw library (specific to reddit) and create a data frame of multiple relevant pages from reddit
 
 2. We get the current prices of all the trending stocks and how much spike (%) did we saw in the past STORING all the data in SQL
 
