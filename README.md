@@ -6,7 +6,7 @@
 
 # FRONTEND
 
-1. We use REACT to build the front end and connect it to he backend model using API.
+1. We use REACT to build the front end and connect it to the backend model using API.
 
 # BACKEND
 
