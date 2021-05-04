@@ -14,10 +14,6 @@ from google.colab import files
 !pip install yahoo_fin -q
 !pip install yahoo_fin --upgrade -q
 !pip install requests_html -q
-!pip install sentifish -q
-!pip install mpldatacursor -q
-!pip install preprocessor -q
-!pip install ChatterBot -q
 !pip install mpld3 -q
 !pip install fastapi -q
 
@@ -570,7 +566,7 @@ Stocks_candlePlots(Analysis_tweets, 20, 365)
 CombinedAnalysis_Stocks(top_gainers_today, 20, 365)
 Stocks_candlePlots(top_gainers_today, 20, 365)
 
-"""# CRYPTO'S"""
+"""# Crypto's Analysis"""
 
 ######################## Get Posts and Tweets for cryptos ######################
 
