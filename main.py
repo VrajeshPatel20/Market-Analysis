@@ -523,8 +523,6 @@ username, password = '-betrayer', 'NarutoUzamaki$$$'
 consumer_key, consumer_secret = '02tFL0DX18rEZN43uV9iCWr6E', 'Bx3xDbD3a9fuP5Kv90ZGHD5amoJXAhF3l5sEElnp6H4esWDk1e'
 access_key, access_secret = '1189932019243003904-85tElnlmswS7Of3dkiIzdImn2J4xiA', '6xt9bsQxlxyBUnR2p71mYYbZ42nDJK7TWCQPeAtsIL5zj'
 
-################################################################################
-
 ######################## Get Posts and Tweets for stocks #######################
 
 # Retreive posts from reddit for stocks
@@ -537,16 +535,12 @@ for subreddit in subreddits_stocks:
 # Retreive tweets from twitter 
 df_tweets = get_data.getTweets(consumer_key, consumer_secret, access_key, access_secret, hashtags="#stocks OR #StockToBuy OR #trading OR #stockmarket OR #investing", target_date='2021-04-30', total_tweets = 2500, attempts = 1)
 
-################################################################################
-
 ############################### Retreive Stocks Info ###########################
  
 stocks = get_data.stocks()
 common_words = get_data.Common_words()
 top_gainers_today = get_data.Gainers_Or_Losers(1)
 top_gainers_today.rename(columns={'ticker': 'Ticker'}, inplace=True)
-
-################################################################################
 
 ####################### Analyze Reddit Posts and Tweets ########################
 
@@ -555,8 +549,6 @@ Analysis_tweets = analyze.Analyze_tweets(stocks,df_tweets, common_words)
 Analysis_tweets = Analysis_tweets.sort_values('Number_Of_Occurences', ascending=False)
 index_names = Analysis_tweets[(Analysis_tweets['Number_Of_Occurences'] >= 10)].index
 Analysis_tweets.drop(index_names, inplace = True)
-
-################################################################################
 
 ########################## Data Visualization ##################################
 
@@ -591,16 +583,12 @@ for subreddit in subreddits_crypto:
     reddit_crypto = reddit_crypto.append(new_data)
 df_tweets_crypto = get_data.getTweets(consumer_key, consumer_secret, access_key, access_secret, hashtags="#Dogecoin OR #DogecoinToTheMoon OR #Dogearmy OR #doge", target_date='2021-04-30', total_tweets = 2500, attempts = 1)
 
-################################################################################
-
 ############################## Get Crypto rates ################################
 
 crypto_data = get_data.CoinBase_Api()
 crypto_data = crypto_data[crypto_data.Circulating_Supply > 0]
 crypto_data = crypto_data[crypto_data.volume_24 > 200000]
 liquidable = get_data.crypto_liquidity(crypto_data)
-
-################################################################################
 
 ####################### Analyze Reddit Posts and Tweets ########################
 
@@ -610,8 +598,6 @@ RedditCrypto_Analysis = pd.merge(left=crypto_data, right=RedditCrypto_Analysis, 
 
 tweets_crypto = analyze.Analyze_Tweets_Crypto(crypto_data, df_tweets_crypto, common_words)
 tweets_crypto = pd.merge(left=crypto_data, right=tweets_crypto, how='left', left_on='Name', right_on='Name')
-
-################################################################################
 
 ######################### Plot Graphs for Crpyto Analysis #######################
 
