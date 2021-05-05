@@ -31,9 +31,13 @@ Analysis of Reddit Posts
 
 ![Analysis Of Reddit Posts](./readme_images/analysis_reddit.png)
 
+![Hover Data Reddit](./readme_images/Reddit_Hover_Data.png)
+
 Analysis of Tweets
 
 ![Analysis Of Twitter](./readme_images/analysis_tweets.png)
+
+![Hover Data Twitter](./readme_images/Twitter_Hover_Data.png)
 
 ![Trends for trending stocks on Reddit Individual](./readme_images/TrendingStock_Analysis_Individual.png)
 
