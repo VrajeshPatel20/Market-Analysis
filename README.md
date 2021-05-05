@@ -23,9 +23,21 @@ You're all set now! Just have your environment activated and the run the desired
 
 ## Data Analysis Results 
 
+Top Crypto's with maximum growth rate
+
+![Top Crypto's](./readme_images/top_crypto_7d.png)
+
+Analysis of Reddit Posts
+
+![Analysis Of Reddit Posts](./readme_images/analysis_reddit.png)
+
+Analysis of Tweets
+
+![Analysis Of Twitter](./readme_images/analysis_tweets.png)
+
 ![Trends for trending stocks on Reddit Individual](./readme_images/TrendingStock_Analysis_Individual.png)
 
-![Trends for trending stocks on Reddit simultaneous](./readme_images/TrendingStocks_Analysis.png)
+![Trends for trending stocks on Reddit simultaneous](./readme_images/trending_reddit.png)
 
 ![Most Growing Crypto's 24h](./readme_images/Top_Cryptos.png)
 
