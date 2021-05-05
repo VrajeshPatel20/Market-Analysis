@@ -23,19 +23,23 @@ You're all set now! Just have your environment activated and the run the desired
 
 ## Data Analysis Results 
 
-Top Crypto's with maximum growth rate
+### Top Crypto's with maximum growth rate
 
 ![Top Crypto's](./readme_images/top_crypto_7d.png)
 
-Analysis of Reddit Posts
+### Analysis of Reddit Posts
 
 ![Analysis Of Reddit Posts](./readme_images/analysis_reddit.png)
 
+Hover Data
+
 ![Hover Data Reddit](./readme_images/Reddit_Hover_Data.png)
 
-Analysis of Tweets
+### Analysis of Tweets
 
 ![Analysis Of Twitter](./readme_images/analysis_tweets.png)
+
+Hover Data
 
 ![Hover Data Twitter](./readme_images/Twitter_Hover_Data.png)
 
