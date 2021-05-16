@@ -310,37 +310,6 @@ def clean(dataFrame):
     return dataFrame
 
 
-# Enter your credentials
-client_id, client_secret = 'jA6tGV9IbyEDxg', 'ku7t8VHg5vtp3JMGjuqJmE5ybQhBxA'
-username, password = '-betrayer', 'NarutoUzamaki$$$'
-
-# We are currently using the normal API to retreive data
-reddit_posts = pd.DataFrame()
-reddit_crypto = pd.DataFrame()
-subreddits_stocks = ["wallstreetbets", "stocks", "investing", "securityanalysis"]
-for subreddit in subreddits_stocks:
-    new_data = Reddit_API(client_id, client_secret, username, password, subreddit, 10000)
-    reddit_posts = reddit_posts.append(new_data)
-subreddits_crypto = ["Bitcoinmarkets", "Ethfinance", "CryptoMarkets", "CryptoCurrencyTrading", "ethtrader",
-                     "Cryptocurrency", "Crypto_Currency_News"]
-for subreddit in subreddits_crypto:
-    new_data = Reddit_API(client_id, client_secret, username, password, subreddit, 10000)
-    reddit_crypto = reddit_crypto.append(new_data)
-
-# To Use the praw library Uncomment the code below
-# df = getDataReddit(client_id, client_secret, username, password, user_agent, 'stocks', 100)
-# df = clean(df)
-# reddit_posts = reddit_posts.append(df)
-
-# Size of our retrieved data
-len(reddit_posts)
-
-consumer_key, consumer_secret = '02tFL0DX18rEZN43uV9iCWr6E', 'Bx3xDbD3a9fuP5Kv90ZGHD5amoJXAhF3l5sEElnp6H4esWDk1e'
-access_key, access_secret = '1189932019243003904-85tElnlmswS7Of3dkiIzdImn2J4xiA', '6xt9bsQxlxyBUnR2p71mYYbZ42nDJK7TWCQPeAtsIL5zj'
-
-
-# df_tweets_crypto = getDataTwitter(consumer_key, consumer_secret, access_key, access_secret, hashtags="#Dogecoin OR #DogecoinToTheMoon OR #Dogearmy OR #doge", target_date='2021-04-30', total_tweets = 2500, attempts = 1)
-# df_tweets = getDataTwitter(consumer_key, consumer_secret, access_key, access_secret, hashtags="#stocks OR #StockToBuy OR #trading OR #stockmarket OR #investing", target_date='2021-04-30', total_tweets = 2500, attempts = 1)
 
 def stocks():
     """
