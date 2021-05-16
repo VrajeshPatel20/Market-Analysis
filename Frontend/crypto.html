@@ -7,133 +7,279 @@
     <title>Document</title>
     <link rel="stylesheet" href="./crypto.css" />
     <script src="./crypto.js"></script>
+    <script src ="https://smtpjs.com/v3/smtp.js"></script>
   </head>
-  <body
-    background="https://st3.depositphotos.com/1007298/18464/i/1600/depositphotos_184640328-stock-photo-dogecoin-and-dollars.jpg"
-  >
-    <div class="head">
-      <h1>crypto investors - paisa hi paisa</h1>
-    </div>
-    <div class="center">
-      <div class="inner">
-        <h2 style="font-weight: 1100">Top Gainers in Crypto</h2>
+  <body>
+    <div class = "body">
+      <div class="notice">
+        <marquee>
+            Note: Graphs shown below are static not live.
+        </marquee>
       </div>
-      <p>Coins which had a 500% Returns in last 24 Hrs</p>
-      <input type="button" onclick="getData()" value="Display" />
-      <div id="pics"></div>
-    </div>
-    <div class="mainbox">
-      <h1>Graphs!</h1>
-      <div class="yo">
-        <h2>top crypto</h2>
-        <a href="./graphs/topCrypto.html"
-          ><img
-            src="https://user-images.githubusercontent.com/75200810/117113030-8d7f3580-ada7-11eb-93f2-436b1c508601.PNG"
-            alt="pic"
-            height="88%"
-            width="97%"
-        /></a>
+      <div class="head">
+       
+        
+        <h1>Market Analysis</h1>
       </div>
-      <div class="yo">
-        <h2>AnalyzeStocks</h2>
-        <a href="./graphs/AnalyzeStocks.html"
-          ><img
-            src="https://user-images.githubusercontent.com/75200810/117114922-0bdcd700-adaa-11eb-9e1d-f1fb1511f3da.PNG"
-            alt="pic"
-            height="88%"
-            width="97%"
-        /></a>
+<!-- ============================= Nav Bar ============================= -->
+
+      <div class="topnav">
+        <div class="dropdown">
+          <button class="dropbtn"  onclick="window.location.href='/crypto.html'">Home
+            <i class="fa fa-caret-down"></i>
+          </button>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="window.location.href='/Top_Growing.html'">Top Growing
+            <i class="fa fa-caret-down"></i>
+          </button>
+
+        </div>
+          <div class="dropdown">
+            <button class="dropbtn"  onclick="window.location.href='/Top_Trending.html'">Top Trending
+              <i class="fa fa-caret-down"></i>
+            </button>
+
+          </div>
+        <div class="dropdown">
+          <button class="dropbtn"  onclick="window.location.href='/Reddit.html'">Sentiment Analysis
+            <i class="fa fa-caret-down"></i>
+          </button>
+
+        </div>
+        <div class="dropdown"  onclick="window.location.href='/Twitter.html'">
+          <button class="dropbtn">Top Rising Cryptos
+            <i class="fa fa-caret-down"></i>
+          </button>
+
+        </div>
+
       </div>
-      <div class="yo">
-        <h2>best crypto</h2>
-        <a href="./graphs/bestCrypto.html"
-          ><img
-            src="https://user-images.githubusercontent.com/75200810/117115310-96bdd180-adaa-11eb-9108-2121d6e23fff.PNG"
-            alt="pic"
-            height="88%"
-            width="97%"
-        /></a>
+
+<!-- ============================== End Nav Bar ================================= -->
+
+<!-- ================================ Graphs ==================================== -->
+
+        <div class="inline_title">Top Growing</div>  
+        <br/>      
+        <div class="row">
+          <div class="column">
+            <section id = "Reddit_Crypto" class = "Reddit_Crypto">
+              <div class="title">
+                <p>
+                  <li>Stocks</li>
+                </p>
+                <!-- <p>The Graph shown below is based on the stocks that experienced the maximum growth in the last 24hours.</p> -->
+              </div>
+              <div class="container"> 
+                <iframe class = "responsive" src="./graphs/Top_Gainers.html"  title="Iframe Example"></iframe>
+              </div>
+            </section>
+          </div>
+          <div class="column">
+            <section id = "Top_Crypto" class = "Top_Crypto">
+              <div class="title">
+                <p>
+                  <li>Crypto</li>
+                </p>
+                <!-- <p>The Graph shown below is based on the growth, liquidity and circulating supply of Crypto.</p> -->
+              </div>
+              <div class="container">
+                <iframe class="responsive" src="./graphs/my3Dplot1.html" title="Iframe Example"></iframe>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <section id = "Most_Growing_C" class="Most_Growing_C">
+              <div class="title">
+                <p>
+                  <li>Cryptos with maximum returns in last 24h</li>
+                </p>
+              </div>
+              <div class="container"> 
+                <iframe class="responsive" src="./graphs/Growing_Crypto.html" title="Iframe Example"></iframe>
+              </div>
+            </section>
+          </div>
+          <div class="column">
+            <section id = "Best_Investable_Crypto" class = "Best_Investable_Crypto">
+              <div class="title">
+                <p>
+                  <li>Cryptos with high liquidity</li>
+                </p>
+              </div> 
+              <div class="container">
+                <iframe class="responsive" src="./graphs/Growing_Crypto_Investable_1.html" title="Iframe Example"></iframe>
+              </div>
+            </section>
+          </div>
+        </div>
+
+    
+
+        
+        <div class="inline_title">Top Trending</div>
+        <br/>
+        <div class="row">
+          <div class="column">
+            <section id = "Reddit_Stocks" class = "Reddit_Stocks">
+              <div class="title">
+                <p>
+                  <li>Reddit Stocks Analysis</li>
+                </p>
+                <!-- <p>The Graph shown below is based on the posts retrieved and analyzed from reddit.</p> -->
+              </div> 
+              <div class="container">
+                <iframe class="responsive"src="./graphs/AnalyzeStocks_6.html" title="Iframe Example"></iframe>
+              </div>
+            </section>
+          </div>
+          <div class="column">
+            <section id = "Twitter_Stocks" class = "Twitter_Stocks">
+              <div class="title">
+                <p>
+                  <br/>
+                </p>
+                <!-- <p>The Graph shown below is based on the tweets retrieved and analyzed from Twitter.</p> -->
+              </div>
+              <div class="container"> 
+                <iframe class="responsive" src="./graphs/Stocks_candlePlots_2.html"  title="Iframe Example"></iframe>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <section id = "Twitter_Stocks" class = "Twitter_Stocks">
+              <div class="title">
+                <p>
+                  <li>Twitter Stocks Analysis</li>
+                </p>
+              </div>
+              <div class="container"> 
+                <iframe class="responsive" src="./graphs/Analyze_twitter.html"  title="Iframe Example"></iframe>
+              </div>
+            </section>
+          </div>
+          <div class="column">
+            <section id = Twitter_Stocks>
+              <div class="title">
+                <p>
+                  <br/>
+                </p>
+              </div>
+              <div class="container">
+                <iframe class="responsive" src="./graphs/CandlePlot_Twitter.html"></iframe>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <section id="Reddit_Crypto">
+              <div class="title">
+                <p>
+                  <li>Reddit Crypto Analysis</li>
+                </p>
+              </div>
+              <div class="container">
+                <iframe class="responsive" src = "./graphs/Reddit_Crypto.html"></iframe>
+              </div>
+            </section>
+          </div>
+          <div class="column">
+            <section id = "Twitter_Crypto">
+              <div class="title">
+                <p>
+                  <li>Twitter Crypto Analysis</li>
+                </p>
+              </div>
+              <div class="container">
+                <iframe class="responsive" src="./graphs/Twitter_Crypto.html"></iframe>
+              </div>
+            </section>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <br/>
+          <div class="inline_title">Sentiment Analysis</div>
+          <div class="column">
+            <section id = "Trending_Reddit" class = "Trending_Reddit">
+              <div class="title">
+                <p>
+                  <li>Reddit</li> 
+                </p>
+              </div> 
+                <img class="img"src="./graphs/Sentiment_Reddit.png" />
+              
+            </section>
+          </div>
+          <div class="column">
+            <section id = "Twitter_Stocks" class = "Twitter_Stocks">
+              <div class="title">
+                <p>
+                  <br/>
+                </p>
+              </div> 
+              <img class="img" src="./graphs/sentiment_reddit_C.png"/>
+            </section>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <section id = "Sentiment Twitter">
+              <div class="title">
+                <p>
+                  <li>Twitter</li>
+                </p>
+              </div>
+              <img class="img" src="./graphs/sentiment_twitter.png"/>
+            </section>
+          </div>
+          <div class="column">
+            <section id = "sentiment_twitter_C">
+              <div class="title">
+                <p>
+                  <br/>
+                </p>
+              </div>
+              <img class="img" src="./graphs/sentiment_twitter_c.png"/>
+            </section>
+          </div>
+        </div>
+
+
+
+
+
+
+<!-- ================================== End Graphs ================================= -->
+        <button class="open-button" onclick="openForm()">Chat</button>
+
+        <div class="chat-popup" id="myForm">
+          <!-- action="mailto:vrajesh1@my.yorku.ca?subject=subject&message=msg" -->
+          <form  class="form-container">
+            <h1>Talk over a cup of joe?</h1>
+
+            <label for="msg2"><b>Name</b></label>
+            <textarea placeholder="Name.." name="name" id = "name" style="min-height: 20px;" required></textarea>
+            <!-- <input type="text" id="name" placeholder="Name.."> -->
+
+            <label for="msg1"><b>Email</b></label>
+            <input type="email" id="email" placeholder="email..">
+            <!-- <textarea placeholder="e-mail.." name="email" id = "email" style="min-height: 2px;" required></textarea> -->
+            
+            <label for="msg"><b>Message</b></label>
+            <textarea placeholder="Type message.." name="msg" id = "msg" required ></textarea>
+
+            <button type="submit" class="btn" value="Send Email" onclick="sendEmail()">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
       </div>
-      <div class="yo">
-        <h2>CombinedAnalysis Stocks</h2>
-        <a href="./graphs/CombinedAnalysis_Stocks.html"
-          ><img
-            src="https://user-images.githubusercontent.com/75200810/117115716-1fd50880-adab-11eb-9c77-1ddabfd1b732.PNG"
-            alt="pic"
-            height="88%"
-            width="97%"
-        /></a>
-      </div>
-      <div class="yo">
-        <h2>Growing Crypto</h2>
-        <a href="./graphs/Growing_Crypto.html"
-          ><img
-            src="https://user-images.githubusercontent.com/75200810/117116314-d638ed80-adab-11eb-8ad9-d6142025131f.PNG"
-            alt="pic"
-            height="88%"
-            width="97%"
-        /></a>
-      </div>
-      <div class="yo">
-        <h2>Growing Crypto Investable</h2>
-        <a href="./graphs/Growing_Crypto_Investable.html"
-          ><img
-            src="https://user-images.githubusercontent.com/75200810/117118904-f8803a80-adae-11eb-90c7-d9b21b6c523e.PNG"
-            alt="pic"
-            height="88%"
-            width="97%"
-        /></a>
-      </div>
-      <div class="yo">
-        <h2>Individual Analysis</h2>
-        <a href="./graphs/IndividualAnalysis.html"
-          ><img
-            src="https://user-images.githubusercontent.com/75200810/117119408-a4298a80-adaf-11eb-8f31-8a48c5996b69.PNG"
-            alt="pic"
-            height="88%"
-            width="97%"
-        /></a>
-      </div>
-      <div class="yo">
-        <h2>my3Dplot1</h2>
-        <a href="./graphs/my3Dplot1.html"
-          ><img
-            src="https://user-images.githubusercontent.com/75200810/117121688-91648500-adb2-11eb-969d-0bf2a2828bab.PNG"
-            alt="pic"
-            height="88%"
-            width="97%"
-        /></a>
-      </div>
-      <div class="yo">
-        <h2>my3Dplot2</h2>
-        <a href="./graphs/my3Dplot2.html"
-          ><img
-            src="https://user-images.githubusercontent.com/75200810/117119871-45b0dc00-adb0-11eb-9918-bef23f6a11c8.PNG"
-            alt="pic"
-            height="88%"
-            width="97%"
-        /></a>
-      </div>
-      <div class="yo">
-        <h2>Reddit Crypto</h2>
-        <a href="./graphs/Reddit_Crypto.html"
-          ><img
-            src="https://user-images.githubusercontent.com/75200810/117120298-c7a10500-adb0-11eb-8d86-d71532d92178.PNG"
-            alt="pic"
-            height="88%"
-            width="97%"
-        /></a>
-      </div>
-      <div class="yo">
-        <h2>Stocks candlePlots</h2>
-        <a href="./graphs/Stocks_candlePlots.html"
-          ><img
-            src="https://user-images.githubusercontent.com/75200810/117120570-1d75ad00-adb1-11eb-9cdc-ced146aa3489.PNG"
-            alt="pic"
-            height="88%"
-            width="97%"
-        /></a>
-      </div>
-    </div>
   </body>
 </html>
