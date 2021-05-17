@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./crypto.css" />
+    <script src="./crypto.js"></script>
+    </head>
+    <body>
+        <div class="body">
+            <div class="head">
+                <h1>Market Analysis</h1>
+              </div>
+        <!-- ============================= Nav Bar ============================= -->
+        
+        <div class="topnav">
+            <div class="dropdown">
+              <button class="dropbtn"  onclick="window.location.href='/crypto.html'">Home
+                <i class="fa fa-caret-down"></i>
+              </button>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn" onclick="window.location.href='/Top_Growing.html'">Top Growing
+                <i class="fa fa-caret-down"></i>
+              </button>
+    
+            </div>
+              <div class="dropdown">
+                <button class="dropbtn"  onclick="window.location.href='/Top_Trending.html'">Top Trending
+                  <i class="fa fa-caret-down"></i>
+                </button>
+    
+              </div>
+            <div class="dropdown">
+              <button class="dropbtn"  onclick="window.location.href='/Reddit.html'">Sentiment Analysis
+                <i class="fa fa-caret-down"></i>
+              </button>
+    
+            </div>
+            <div class="dropdown"  onclick="window.location.href='/Twitter.html'">
+              <button class="dropbtn">Top Rising Cryptos
+                <i class="fa fa-caret-down"></i>
+              </button>
+    
+            </div>
+
+          </div>
+        
+        <!-- ============================== End Nav Bar ================================= -->
+        <br/>
+        <div class="inline_title">Top Growing</div>  
+        <br/>      
+        <div class="row">
+          <div class="column">
+            <section id = "Reddit_Crypto" class = "Reddit_Crypto">
+              <div class="title">
+                <p>
+                  <li>Stocks</li>
+                </p>
+                <!-- <p>The Graph shown below is based on the stocks that experienced the maximum growth in the last 24hours.</p> -->
+              </div>
+              <div class="container"> 
+                <iframe class = "responsive" src="./graphs/Top_Gainers.html"  title="Iframe Example"></iframe>
+              </div>
+            </section>
+          </div>
+          <div class="column">
+            <section id = "Top_Crypto" class = "Top_Crypto">
+              <div class="title">
+                <p>
+                  <li>Crypto</li>
+                </p>
+                <!-- <p>The Graph shown below is based on the growth, liquidity and circulating supply of Crypto.</p> -->
+              </div>
+              <div class="container">
+                <iframe class="responsive" src="./graphs/my3Dplot1.html" title="Iframe Example"></iframe>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <section id = "Most_Growing_C" class="Most_Growing_C">
+              <div class="title">
+                <p>
+                  <li>Cryptos with maximum returns in last 24h</li>
+                </p>
+              </div>
+              <div class="container"> 
+                <iframe class="responsive" src="./graphs/Growing_Crypto.html" title="Iframe Example"></iframe>
+              </div>
+            </section>
+          </div>
+          <div class="column">
+            <section id = "Best_Investable_Crypto" class = "Best_Investable_Crypto">
+              <div class="title">
+                <p>
+                  <li>Cryptos with high liquidity</li>
+                </p>
+              </div> 
+              <div class="container">
+                <iframe class="responsive" src="./graphs/Growing_Crypto_Investable_1.html" title="Iframe Example"></iframe>
+              </div>
+            </section>
+          </div>
+        </div>
+        </div>
+    </body>
+</html>

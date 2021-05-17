@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./crypto.css" />
+    <script src="./crypto.js"></script>
+    </head>
+    <body>
+        <div class="body">
+            <div class="head">
+                <h1>Market Analysis</h1>
+              </div>
+        <!-- ============================= Nav Bar ============================= -->
+        
+        <div class="topnav">
+            <div class="dropdown">
+              <button class="dropbtn"  onclick="window.location.href='/crypto.html'">Home
+                <i class="fa fa-caret-down"></i>
+              </button>
+            </div>
+            <!-- <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a> -->
+            <div class="dropdown">
+              <button class="dropbtn" onclick="window.location.href='/Top_Growing.html'">Top Growing
+                <i class="fa fa-caret-down"></i>
+              </button>
+    
+            </div>
+              <div class="dropdown">
+                <button class="dropbtn"  onclick="window.location.href='/Top_Trending.html'">Top Trending
+                  <i class="fa fa-caret-down"></i>
+                </button>
+    
+              </div>
+            <div class="dropdown">
+              <button class="dropbtn"  onclick="window.location.href='/Reddit.html'">Sentiment Analysis
+                <i class="fa fa-caret-down"></i>
+              </button>
+    
+            </div>
+            <div class="dropdown"  onclick="window.location.href='/Twitter.html'">
+              <button class="dropbtn">Top Rising Cryptos
+                <i class="fa fa-caret-down"></i>
+              </button>
+    
+            </div>
+
+          </div>
+        
+        <!-- ============================== End Nav Bar ================================= -->
+        <br/>
+        <div class="inline_title">Top Trending</div>
+        <br/>
+        <div class="row">
+          <div class="column">
+            <section id = "Reddit_Stocks" class = "Reddit_Stocks">
+              <div class="title">
+                <p>
+                  <li>Reddit Stocks Analysis</li>
+                </p>
+                <!-- <p>The Graph shown below is based on the posts retrieved and analyzed from reddit.</p> -->
+              </div> 
+              <div class="container">
+                <iframe class="responsive"src="./graphs/AnalyzeStocks_6.html" title="Iframe Example"></iframe>
+              </div>
+            </section>
+          </div>
+          <div class="column">
+            <section id = "Twitter_Stocks" class = "Twitter_Stocks">
+              <div class="title">
+                <p>
+                  <br/>
+                </p>
+                <!-- <p>The Graph shown below is based on the tweets retrieved and analyzed from Twitter.</p> -->
+              </div>
+              <div class="container"> 
+                <iframe class="responsive" src="./graphs/Stocks_candlePlots_2.html"  title="Iframe Example"></iframe>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <section id = "Twitter_Stocks" class = "Twitter_Stocks">
+              <div class="title">
+                <p>
+                  <li>Twitter Stocks Analysis</li>
+                </p>
+              </div>
+              <div class="container"> 
+                <iframe class="responsive" src="./graphs/Analyze_twitter.html"  title="Iframe Example"></iframe>
+              </div>
+            </section>
+          </div>
+          <div class="column">
+            <section id = Twitter_Stocks>
+              <div class="title">
+                <p>
+                  <br/>
+                </p>
+              </div>
+              <div class="container">
+                <iframe class="responsive" src="./graphs/CandlePlot_Twitter.html"></iframe>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <section id="Reddit_Crypto">
+              <div class="title">
+                <p>
+                  <li>Reddit Crypto Analysis</li>
+                </p>
+              </div>
+              <div class="container">
+                <iframe class="responsive" src = "./graphs/Reddit_Crypto.html"></iframe>
+              </div>
+            </section>
+          </div>
+          <div class="column">
+            <section id = "Twitter_Crypto">
+              <div class="title">
+                <p>
+                  <li>Twitter Crypto Analysis</li>
+                </p>
+              </div>
+              <div class="container">
+                <iframe class="responsive" src="./graphs/Twitter_Crypto.html"></iframe>
+              </div>
+            </section>
+          </div>
+        </div>
+          </div>
+    </body>
+</html>

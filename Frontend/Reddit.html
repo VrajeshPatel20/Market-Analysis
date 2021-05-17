@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./crypto.css" />
+    <script src="./crypto.js"></script>
+    </head>
+    <body>
+        <div class="body">
+            <div class="head">
+                <h1>Market Analysis</h1>
+              </div>
+        <!-- ============================= Nav Bar ============================= -->
+        
+        <div class="topnav">
+            <div class="dropdown">
+              <button class="dropbtn"  onclick="window.location.href='/crypto.html'">Home
+                <i class="fa fa-caret-down"></i>
+              </button>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn" onclick="window.location.href='/Top_Growing.html'">Top Growing
+                <i class="fa fa-caret-down"></i>
+              </button>
+    
+            </div>
+              <div class="dropdown">
+                <button class="dropbtn"  onclick="window.location.href='/Top_Trending.html'">Top Trending
+                  <i class="fa fa-caret-down"></i>
+                </button>
+    
+              </div>
+            <div class="dropdown">
+              <button class="dropbtn"  onclick="window.location.href='/Reddit.html'">Sentiment Analysis
+                <i class="fa fa-caret-down"></i>
+              </button>
+    
+            </div>
+            <div class="dropdown"  onclick="window.location.href='/Twitter.html'">
+              <button class="dropbtn">Top Rising Cryptos
+                <i class="fa fa-caret-down"></i>
+              </button>
+    
+            </div>
+
+          </div>
+        
+        <!-- ============================== End Nav Bar ================================= -->
+        <div class="row">
+            <br/>
+            <div class="inline_title">Sentiment Analysis</div>
+            <div class="column">
+              <section id = "Trending_Reddit" class = "Trending_Reddit">
+                <div class="title">
+                  <p>
+                    <li>Reddit</li> 
+                  </p>
+                </div> 
+                  <img class="img"src="./graphs/Sentiment_Reddit.png" />
+                
+              </section>
+            </div>
+            <div class="column">
+              <section id = "Twitter_Stocks" class = "Twitter_Stocks">
+                <div class="title">
+                  <p>
+                    <br/>
+                  </p>
+                </div> 
+                <img class="img" src="./graphs/sentiment_reddit_C.png"/>
+              </section>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <section id = "Sentiment Twitter">
+                <div class="title">
+                  <p>
+                    <li>Twitter</li>
+                  </p>
+                </div>
+                <img class="img" src="./graphs/sentiment_twitter.png"/>
+              </section>
+            </div>
+            <div class="column">
+              <section id = "sentiment_twitter_C">
+                <div class="title">
+                  <p>
+                    <br/>
+                  </p>
+                </div>
+                <img class="img" src="./graphs/sentiment_twitter_c.png"/>
+              </section>
+            </div>
+          </div>
+          </div>
+    </body>
+</html>
