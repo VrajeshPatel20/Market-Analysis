@@ -1,7 +1,7 @@
 # Stocks_vs_SocialMedia
 
 # NOTE: The project is under development 
-
+[Link to the Website](https://social-influence-analysis.herokuapp.com/)
 The objective of the project is to analyze data from social media platforms such as Twitter and Reddit with respect to the Stocks and Cryptos that can be found on certain hashtags or subreddits with the sole purpose to cross reference it with the price spikes expereinced in the market. We collect recent posts and tweets using API from reddit and twitter. It is important for us to get the current prices and spikes for all stocks and cryptos. We get the data using API from yahoo finance and coinbase respectively. Moreover, it cross references all the tweets and posts retreived with a dataFrame containing names of all stocks and crpytos to access the number of occurences of stocks or cryptos on the respective social media platform along with their number of upvotes or retweets. It projects the graphs of the top trending stocks and cryptos using data visualization libraries such as matplotlib, seaborn, plotly and so on. 
 
 
