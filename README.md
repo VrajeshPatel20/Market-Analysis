@@ -1,4 +1,4 @@
-# Stocks_vs_SocialMedia
+# Social Media Influence on Stocks and Crypto's
 
 # NOTE: The project is under development 
 
