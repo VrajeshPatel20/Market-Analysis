@@ -19,7 +19,7 @@
       <div class="head">
        
         
-        <h1>Market Analysis</h1>
+        <h1>Social Media Influence on Stocks and Crypto's</h1>
       </div>
 <!-- ============================= Nav Bar ============================= -->
 
@@ -53,13 +53,20 @@
           </button>
 
         </div>
+        <div class="dropdown"  onclick="window.location.href='/aboutme.html'">
+          <button class="dropbtn">About
+            <i class="fa fa-caret-down"></i>
+          </button>
+
+        </div>
 
       </div>
       
 <!-- ============================== End Nav Bar ================================= -->
 
 <!-- ================================ Graphs ==================================== -->
-        <br/>
+
+        <!-- <br/>
         <div class="inline_title">Top Growing</div>  
         <br/>      
         <div class="row">
@@ -69,7 +76,6 @@
                 <p>
                   <li>Stocks</li>
                 </p>
-                <!-- <p>The Graph shown below is based on the stocks that experienced the maximum growth in the last 24hours.</p> -->
               </div>
               <div class="container"> 
                 <iframe class = "responsive" src="./graphs/Top_Gainers.html"  title="Iframe Example"></iframe>
@@ -82,7 +88,6 @@
                 <p>
                   <li>Crypto</li>
                 </p>
-                <!-- <p>The Graph shown below is based on the growth, liquidity and circulating supply of Crypto.</p> -->
               </div>
               <div class="container">
                 <iframe class="responsive" src="./graphs/my3Dplot1.html" title="Iframe Example"></iframe>
@@ -129,7 +134,6 @@
                 <p>
                   <li>Reddit Stocks Analysis</li>
                 </p>
-                <!-- <p>The Graph shown below is based on the posts retrieved and analyzed from reddit.</p> -->
               </div> 
               <div class="container">
                 <iframe class="responsive"src="./graphs/AnalyzeStocks_6.html" title="Iframe Example"></iframe>
@@ -142,7 +146,6 @@
                 <p>
                   <br/>
                 </p>
-                <!-- <p>The Graph shown below is based on the tweets retrieved and analyzed from Twitter.</p> -->
               </div>
               <div class="container"> 
                 <iframe class="responsive" src="./graphs/Stocks_candlePlots_2.html"  title="Iframe Example"></iframe>
@@ -249,11 +252,48 @@
               <img class="img" src="./graphs/sentiment_twitter_c.png"/>
             </section>
           </div>
-        </div>
+        </div>  -->
 
+<!-- ========================TRY======================== -->
+<div class="inline_title">Overview</div>
+<div class="row">
+  
+  <div class="row1">
+  <!-- <div class="column"> -->
+     
+    <!--<img class = "social" src="./graphs/socialMedia.png"/> -->
+    <!-- <div class="container-home">
+      <img src="./graphs/socialMedia.png" alt="Avatar" class="social">
+      <div class="overlay-home">
+        <div class="text-home"><a href="https://github.com/VrajeshPatel20/Market-Analysis">Code link to GitHub</a></div>
+      </div>
+    </div>
+  </div> -->
+  <div class="homePage">
+  <div class="column">
+    <div class="title_main">
 
-
-
+        <h2><span>Highlights</span></h2>
+        
+        <li>Started by mining data using either API or requests library from python to get real time data. Retrieved over 3000
+          posts (Reddit) and tweets (Twitter) along with current stock and crypto prices from various sources as dataframe.
+        </li>&nbsp;
+        <li>
+          Analyzed the retrieved posts and tweets by cross referencing the names of stocks and cryptos with the latest posts
+(Reddit) and tweets (Twitter). Trained a model for sentiment analysis using a simple linear and embedded layer from
+the ‘nn’ Library from PyTorch and achieved 80% accuracy.
+        </li>&nbsp;
+        <li>
+          Visualized results obtained from the data of the top trending stocks.
+        </li>&nbsp;
+        <li>Performed linear regression on the results to get a relation between the influence of positive posts and the influence
+          of negative posts to the changes experienced in the stock or crypto with 50% accuracy due to insufficient data.
+        </li>
+    </div>
+  </div>
+</div>
+</div>
+</div>
 
 
 <!-- ================================== End Graphs ================================= -->
@@ -279,6 +319,7 @@
             <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
           </form>
         </div>
+
       </div>
   </body>
 </html>
