@@ -10,14 +10,14 @@
     </head>
     <body>
         <div class="body">
-          <div class="notice">
-            <marquee>
-                Note: Graphs shown below are static not live.
-            </marquee>
-          </div>
-        <div class="head">
-            <h1>Social Media Influence on Stocks and Crypto's</h1>
-          </div>
+                <div class="notice">
+                  <marquee>
+                      Note: Graphs shown below are static not live.
+                  </marquee>
+                </div>
+            <div class="head">
+                <h1>Social Media Influence on Stocks and Crypto's</h1>
+              </div>
         <!-- ============================= Nav Bar ============================= -->
         
         <div class="topnav">
@@ -53,42 +53,92 @@
               </button>
     
             </div>
-            <div class="dropdown"  onclick="window.location.href='/aboutme.html'">
-              <button class="dropbtn">About
-                <i class="fa fa-caret-down"></i>
-              </button>
-    
-            </div>
 
           </div>
         
         <!-- ============================== End Nav Bar ================================= -->
-
-        <div class="inline_title">Top Rising Crypto's</div>
-        <p id="pics"></p>
-        <!-- =================Contact=================== -->
-        <button class="open-button" onclick="openForm()">Chat</button>
-
-        <div class="chat-popup" id="myForm">
-          <!-- action="mailto:vrajesh1@my.yorku.ca?subject=subject&message=msg" -->
-          <form  class="form-container">
-            <h1>Talk over a cup of joe?</h1>
-
-            <label for="msg2"><b>Name</b></label>
-            <textarea placeholder="Name.." name="name" id = "name" style="min-height: 20px;" required></textarea>
-            <!-- <input type="text" id="name" placeholder="Name.."> -->
-
-            <label for="msg1"><b>Email</b></label>
-            <input type="email" id="email" placeholder="email..">
-            <!-- <textarea placeholder="e-mail.." name="email" id = "email" style="min-height: 2px;" required></textarea> -->
-            
-            <label for="msg"><b>Message</b></label>
-            <textarea placeholder="Type message.." name="msg" id = "msg" required ></textarea>
-
-            <button type="submit" class="btn" value="Send Email" onclick="sendEmail()">Send</button>
-            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-          </form>
+        <div class="inline_title">Top Trending</div>
+        <br/>
+        <div class="row">
+          <div class="column">
+            <section id = "Reddit_Stocks" class = "Reddit_Stocks">
+              <div class="title">
+                <p>
+                  <li>Reddit Stocks Analysis</li>
+                </p>
+                <!-- <p>The Graph shown below is based on the posts retrieved and analyzed from reddit.</p> -->
+              </div> 
+              <div class="container">
+                <iframe class="responsive"src="./graphs/AnalyzeStocks_6.html" title="Iframe Example"></iframe>
+              </div>
+            </section>
+          </div>
+          <div class="column">
+            <section id = "Twitter_Stocks" class = "Twitter_Stocks">
+              <div class="title">
+                <p>
+                  <br/>
+                </p>
+                <!-- <p>The Graph shown below is based on the tweets retrieved and analyzed from Twitter.</p> -->
+              </div>
+              <div class="container"> 
+                <iframe class="responsive" src="./graphs/Stocks_candlePlots_2.html"  title="Iframe Example"></iframe>
+              </div>
+            </section>
+          </div>
         </div>
-        <!-- ========================END======================== -->
+        <div class="row">
+          <div class="column">
+            <section id = "Twitter_Stocks" class = "Twitter_Stocks">
+              <div class="title">
+                <p>
+                  <li>Twitter Stocks Analysis</li>
+                </p>
+              </div>
+              <div class="container"> 
+                <iframe class="responsive" src="./graphs/Analyze_twitter.html"  title="Iframe Example"></iframe>
+              </div>
+            </section>
+          </div>
+          <div class="column">
+            <section id = Twitter_Stocks>
+              <div class="title">
+                <p>
+                  <br/>
+                </p>
+              </div>
+              <div class="container">
+                <iframe class="responsive" src="./graphs/CandlePlot_Twitter.html"></iframe>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <section id="Reddit_Crypto">
+              <div class="title">
+                <p>
+                  <li>Reddit Crypto Analysis</li>
+                </p>
+              </div>
+              <div class="container">
+                <iframe class="responsive" src = "./graphs/Reddit_Crypto.html"></iframe>
+              </div>
+            </section>
+          </div>
+          <div class="column">
+            <section id = "Twitter_Crypto">
+              <div class="title">
+                <p>
+                  <li>Twitter Crypto Analysis</li>
+                </p>
+              </div>
+              <div class="container">
+                <iframe class="responsive" src="./graphs/Twitter_Crypto.html"></iframe>
+              </div>
+            </section>
+          </div>
+        </div>
+          </div>
     </body>
 </html>
