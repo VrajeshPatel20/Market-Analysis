@@ -77,14 +77,16 @@ body::-webkit-scrollbar {
   
   /* Dropdown button */
   .dropdown .dropbtn {
-    font-size: 25px;
+    font-size: 115%;
     border: none;
     outline: none;
     color: white;
     padding: 14px 16px;
     background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
+    /* font-family: inherit; Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   /* Add a red background color to navbar links on hover */
@@ -134,13 +136,20 @@ body::-webkit-scrollbar {
     width: 70%;
   }
 .inline_title {
-    font-size:xx-large;
-    width: 100%;
-    background-color: #4ecca3;
-    padding: 10px;
-    margin: 0.5px;
-    text-align: center;
-  
+  font-size: 25px;
+  width: 100%;
+  background-color: #4ecca3;
+  padding: 8px;
+  margin: 0px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  /* font-size:xx-large;
+  width: 100%;
+  background-color: #4ecca3;
+  padding: 10px;
+  margin: 0.5px;
+  text-align: center; */
 }
 .box {
   width: 100;
@@ -230,8 +239,33 @@ body::-webkit-scrollbar {
   width: 50%;
   padding: 5px;
   text-align: justify;
+  
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 
+.row1{
+  background-image: url('graphs/socialMedia.png');
+  /* opacity: 0.2; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  clear: both;
+  display: table;
+  
+  
+}
+
+.homePage{
+  /* float:left; */
+  width: 200%;
+  padding: 5px;
+  text-align: justify;
+ margin: auto;
+  
+  
+}
 
 /* Clearfix (clear floats) */
 .row::after {
@@ -239,13 +273,79 @@ body::-webkit-scrollbar {
   clear: both;
   display: table;
 }
+.title_main {
+  font-size:large;
+  /* background-color: rgb(181, 225, 255); */
+  background-color: #ffffff;
+  width: 80%;
+  border: 8px solid #ddd;
+  padding: 50px;
+  margin: 6.4%;
+  /* margin:6% 10% 6% 10%; */
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.96;
+}
+.social {
+  width:200%;
+  border: #232931;
+  padding: auto;
+  margin-left: 2%;
+  margin: 1px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  
+}
+.container-home {
+  position: relative;
+  width: 50%;
+}
+
+.image-home {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay-home {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+  opacity: 0.7;
+}
+
+.container-home:hover .overlay-home {
+  width: 200%;
+}
+
+.text-home {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 @media only screen and (max-width: 894px){
 
   .title {
     font-size: large;
     color: #eeeeee;
   }
-  
+  .title_main {
+    font-size:medium;
+  }
   .inline_title {
     font-size:x-large;
     width: 100%;
@@ -254,8 +354,9 @@ body::-webkit-scrollbar {
     padding: 10px;
     margin: 0.5px;
     text-align: center;
-  
-}
+
+  }
+
 .img {
   width: 100%;
 }
@@ -268,7 +369,6 @@ body::-webkit-scrollbar {
   right: 0;
   width: 100%;
   height: 100%;
-  
 }
 .container {
   position: relative;
@@ -287,6 +387,12 @@ body::-webkit-scrollbar {
     width: 100%;
     margin-top: 0;
   }
+
+  
+.homePage{
+  /* float:left; */
+  width: 100%;}
+
 }
 /* Style inputs */
 input[type=text], select, textarea {
@@ -389,4 +495,112 @@ input[type=submit]:hover {
     border: none;
     background: #f1f1f1;
     resize: none;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+.circle {
+  margin: auto;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background: #4E8953;
+}
+
+h2 {
+  /* color: #D5E2D6;
+  text-align: center;
+  line-height: 50px;
+  -moz-transform: scale(1) rotate(-5deg) translateX(0px) translateY(0px) skewX(1deg) skewY(1deg);
+-webkit-transform: scale(1) rotate(-5deg) translateX(0px) translateY(0px) skewX(1deg) skewY(1deg);
+-o-transform: scale(1) rotate(-5deg) translateX(0px) translateY(0px) skewX(1deg) skewY(1deg);
+-ms-transform: scale(1) rotate(-5deg) translateX(0px) translateY(0px) skewX(1deg) skewY(1deg);
+transform: scale(1) rotate(-5deg) translateX(0px) translateY(0px) skewX(1deg) skewY(1deg); */
+  /*-----------------------*/
+  /* text-shadow: 1px 1px #4A744D, 2px 2px #4A744D, 3px 3px #4A744D, 4px 4px #4A744D, 5px 5px #4A744D, 6px 6px #4A744D, 7px 7px #4A744D, 8px 8px #4A744D, 9px 9px #4A744D, 10px 10px #4A744D, 11px 11px #4A744D, 12px 12px #4A744D, 13px 13px #4A744D, 14px 14px #4A744D, 15px 15px #4A744D, 16px 16px #4A744D, 17px 17px #4A744D, 18px 18px #4A744D, 19px 19px #4A744D, 20px 20px #4A744D, 21px 21px #4A744D, 22px 22px #4A744D, 23px 23px #4A744D, 24px 24px #4A744D, 25px 25px #4A744D, 26px 26px 6px #06520C; */
+  
+  font-family: "Arial Black", sans-serif;
+  font-size: 3.5em;
+  letter-spacing: -1px;
+  /* background-color:rgb(51, 51, 51); */
+  color: black;
+  text-align: center;
+  margin-top: 0;
+  
+  
+}
+
+span:nth-child(3), span:nth-child(7) { 
+font-size: 30px;
+}
+
+span:nth-child(1), span:nth-child(9), span:nth-child(5)  {
+  font-size: 65%;
+}
+
+#footer {
+  background: #f7f8f9;
+  color: #45505b;
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+#footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+#footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links {
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #0563bb;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: #0678e3;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .copyright {
+  margin: 0 0 5px 0;
+}
+
+#footer .credits {
+  font-size: 13px;
+}
+@media screen and (max-width: 600px) {
+  #footer {
+    background: #f7f8f9;
+    color: #45505b;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 0;
+  }
 }
