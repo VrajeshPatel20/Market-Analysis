@@ -24,8 +24,6 @@ from torchtext.legacy import datasets
 import random
 from torch.utils.data import DataLoader, TensorDataset, random_split
 
-# %matplotlib inline
-
 # Use a white background for matplotlib figures
 matplotlib.rcParams['figure.facecolor'] = '#ffffff'
 
