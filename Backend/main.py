@@ -17,6 +17,9 @@ Original file is located at
 # !pip install wordcloud --upgrage --quiet
 
 # Commented out IPython magic to ensure Python compatibility.
+
+# run the following command in your local enviorment 
+# pip install -r requirements.txt 
 #########################################  DATA REQUESTS #############################################
 
 # To provide current date and time in an format understandable by our API
