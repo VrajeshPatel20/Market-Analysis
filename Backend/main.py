@@ -9,14 +9,14 @@ Original file is located at
 
 ###################### Install all necessary libraries #########################
 
-from google.colab import files
-!pip install praw -q
-!pip install yfinance --upgrade --no-cache-dir -q
-!pip install yahoo_fin -q
-!pip install yahoo_fin --upgrade -q
-!pip install requests_html -q
-!pip install mpld3 -q
-!pip install fastapi -q
+# from google.colab import files
+# !pip install praw -q
+# !pip install yfinance --upgrade --no-cache-dir -q
+# !pip install yahoo_fin -q
+# !pip install yahoo_fin --upgrade -q
+# !pip install requests_html -q
+# !pip install mpld3 -q
+# !pip install fastapi -q
 
 ################################################################################
 
