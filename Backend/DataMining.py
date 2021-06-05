@@ -26,8 +26,6 @@ from bs4 import BeautifulSoup
 
 ##########################################  DATA MINING ##############################################
 
-# To get posts from reddit
-import praw
 
 # To get the current stock prices
 import yfinance as yf
