@@ -60,12 +60,7 @@ import matplotlib.pylab as plt
 import seaborn as sns
 import plotly.figure_factory as ff
 from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
-import mpld3
 import plotly
-
-########################################### DATA TRANSFER ############################################
-
-from fastapi import FastAPI
 
 
 #######################################################################################################
