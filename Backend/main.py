@@ -9,20 +9,12 @@ Original file is located at
 
 ###################### Install all necessary libraries #########################
 
-from google.colab import files
-!pip install yfinance --upgrade --no-cache-dir -q
-!pip install yahoo_fin -q
-!pip install yahoo_fin --upgrade -q
-!pip install requests_html -q
-!pip install wordcloud --upgrage --quiet
-
-################################################################################
-
-# import sys
-# from google.colab import drive
-# drive.mount('/content/drive')
-# sys.path.insert(0, '/content/drive/MyDrive/AnalyzePosts.py')
-# sys.path.insert(0, '/content/drive/MyDrive/DataMining.py')
+# from google.colab import files
+# !pip install yfinance --upgrade --no-cache-dir -q
+# !pip install yahoo_fin -q
+# !pip install yahoo_fin --upgrade -q
+# !pip install requests_html -q
+# !pip install wordcloud --upgrage --quiet
 
 # Commented out IPython magic to ensure Python compatibility.
 #########################################  DATA REQUESTS #############################################
