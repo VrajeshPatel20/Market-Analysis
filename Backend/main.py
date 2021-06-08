@@ -548,12 +548,12 @@ complete = True if int(input("Would you like to run the complete Analysis or hav
 ############################ Establish credentials #############################
 
 # Reddit
-client_id, client_secret = 'jA6tGV9IbyEDxg', 'ku7t8VHg5vtp3JMGjuqJmE5ybQhBxA'
-username, password = '-betrayer', 'NarutoUzamaki$$$'
+client_id, client_secret = '', ''
+username, password = '',''
 
-# Twitter 
-consumer_key, consumer_secret = 'Eoa8hFsMycFYsFyiOEeOW3mpb', 'JHCvRJO8EPe8IDq3wZ9Pcaw6RekSxNtue7KVGpXCz7ZZLSFAty'
-access_key, access_secret = '1189932019243003904-85tElnlmswS7Of3dkiIzdImn2J4xiA', '6xt9bsQxlxyBUnR2p71mYYbZ42nDJK7TWCQPeAtsIL5zj'
+# Enter your credentials here Twitter 
+consumer_key, consumer_secret = '',''
+access_key, access_secret = '',''
 
 ################################################################################
 
