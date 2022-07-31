@@ -46,7 +46,6 @@ top_gainers_today.rename(columns={'ticker': 'Ticker'}, inplace=True)
 ################################################################################
 
 Analysis_reddit = analyze.Analyze_Reddit_Posts(stocks, reddit_posts, common_words)
-
 Analysis_tweets = analyze.Analyze_tweets(stocks,df_tweets, common_words)
 Analysis_tweets = Analysis_tweets.sort_values('Number_Of_Occurences', ascending=False)
 index_names = Analysis_tweets[(Analysis_tweets['Number_Of_Occurences'] >= 10)].index
