@@ -14,6 +14,7 @@ import pandas as pd
 import AnalyzePosts as analyze
 import sqlite3
 
+
 ############################ Establish credentials #############################
 
 # Reddit
